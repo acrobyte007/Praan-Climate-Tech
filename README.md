@@ -21,8 +21,9 @@ Justifications for the Approach
 DBSCAN was chosen because it is well-suited for point cloud data, which often contains varying densities and noise. Unlike k-means, DBSCAN does not require specifying the number of clusters, which is advantageous for point clouds where the number of clusters is unknown.
 Voxel Grid Down-Sampling helps reduce the number of points in large point clouds, improving the speed of clustering and making the process more efficient.
 Noise Removal for Real-World Data helps to improve the quality of the clustering by filtering out random outliers, which are typical in data captured from sensors in real-world environments.
+
+**Instructions**:
 <br>
-**Instructions**:<br>
 1. Clone the Repository
 Clone this repository to your local machine:
 
