@@ -21,7 +21,7 @@ Justifications for the Approach
 DBSCAN was chosen because it is well-suited for point cloud data, which often contains varying densities and noise. Unlike k-means, DBSCAN does not require specifying the number of clusters, which is advantageous for point clouds where the number of clusters is unknown.
 Voxel Grid Down-Sampling helps reduce the number of points in large point clouds, improving the speed of clustering and making the process more efficient.
 Noise Removal for Real-World Data helps to improve the quality of the clustering by filtering out random outliers, which are typical in data captured from sensors in real-world environments.
-**Instructions**:
+**Instructions**:<br>
 1. Clone the Repository
 Clone this repository to your local machine:
 
@@ -40,8 +40,8 @@ Place these files in the same directory as the script.
 4. Update File Paths
 In the Python script (point_cloud_clustering.py), update the paths for the ideal and real-world point cloud files:
 
-ideal_file = "ideal_data.ply"   # Path to your ideal point cloud file (PLY)
-real_file = "real_world_data.pcd"  # Path to your real-world point cloud file (PCD)
+ideal_file = "ideal_data.ply"   
+real_file = "real_world_data.pcd"
 5. Run the Code
 Run the Python script
 6. Output
@@ -50,7 +50,7 @@ The clustered point clouds will be saved as separate PCD files, named as ideal_d
 7. Visualize Results
 After running the script, Open3D's interactive viewer will open, allowing you to inspect the clusters. You can also open the saved PCD files in any point cloud viewer.
 
-**Relevant Details about the Implementation**:
+**Relevant Details about the Implementation**:<br>
 Point Cloud File Format: The script supports both PLY (ideal) and PCD (real-world) point cloud formats.
 DBSCAN Parameters:
 eps=0.05, min_samples=10 for ideal data (PLY).
