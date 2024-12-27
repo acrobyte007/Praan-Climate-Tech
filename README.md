@@ -47,10 +47,11 @@ real_file = "real_world_data.pcd"
 <br>
 5. Run the Code
 Run the Python script
+<br>
 6. Output<br>
 The script will process the point cloud files, perform clustering, and visualize the results in an interactive 3D viewer.
 The clustered point clouds will be saved as separate PCD files, named as ideal_data_cluster_X.pcd and real_world_data_cluster_X.pcd, where X is the cluster label.
-7. Visualize Results<br>
+<br>7. Visualize Results<br>
 After running the script, Open3D's interactive viewer will open, allowing you to inspect the clusters. You can also open the saved PCD files in any point cloud viewer.
 <br>
 **Relevant Details about the Implementation**:<br>
