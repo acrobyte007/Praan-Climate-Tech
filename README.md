@@ -12,7 +12,7 @@ It is robust to noise, making it suitable for real-world data that may contain o
 Parameters: The eps (epsilon) parameter defines the maximum distance between two points to be considered as part of the same cluster, and the min_samples parameter defines the minimum number of points required to form a dense region (i.e., a cluster). These parameters were fine-tuned separately for ideal and real-world data:
 Ideal Data (PLY): eps=0.05 and min_samples=10 work well because the ideal data is clean and uniformly distributed.
 Real-World Data (PCD): For noisy data, eps=0.1 and min_samples=20 provide better clustering results by accommodating the noise and imperfections.
-3. Visualization
+<br>3. Visualization<br>
 The clusters are visualized with each cluster assigned a unique color. Points that are classified as noise (label -1 by DBSCAN) are colored black to distinguish them from the rest of the points.
 We used Open3D for visualization, which provides an interactive 3D viewer to inspect the clustered point clouds.
 4. Exporting Clusters
